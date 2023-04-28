@@ -59,6 +59,14 @@ main {
     border: 2px solid aqua;
 }
 
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
 footer {
     grid-column: 1 / 4;
     border: 2px solid yellow;
