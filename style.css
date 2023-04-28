@@ -27,4 +27,39 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    border: 2px solid red;
+    max-width: 90%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    gap: 10px;
+}
+
+header {
+    grid-column: 1 / 4;
+    border: 4px solid green;
+    grid-row: 1 / 1;
+    display: flex;
+    height: 15vh;
+}
+
+header img {
+    width: 15%;
+}
+
+main {
+    grid-column: 1 / 4;
+    border: 2px solid aqua;
+}
+
+footer {
+    grid-column: 1 / 4;
+    border: 2px solid yellow;
 }
