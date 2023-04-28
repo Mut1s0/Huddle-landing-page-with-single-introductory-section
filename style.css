@@ -33,9 +33,8 @@ body {
 }
 
 .wrapper {
-    border: 2px solid red;
     max-width: 90%;
-    height: 90vh;
+    /* height: 94vh; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(150px, auto);
@@ -44,7 +43,6 @@ body {
 
 header {
     grid-column: 1 / 4;
-    border: 4px solid green;
     grid-row: 1 / 1;
     display: flex;
     height: 15vh;
@@ -56,18 +54,86 @@ header img {
 
 main {
     grid-column: 1 / 4;
-    border: 2px solid aqua;
+    grid-row: 2 / 6;
 }
 
 .main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     display: flex;
     align-items: center;
 }
 
+.main .main--content {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main .main--content h1 {
+    text-transform: capitalize;
+}
+
+.main .main--content h1 span {
+    display: block;
+}
+
+.main .main--content p span {
+    display: block;
+}
+
+.main .main--content h1,
+.main .main--content p {
+    color: #fff;
+    font-family: var(--ff-body);
+}
+
+.main .main--content h1 {
+    font-size: 2rem;
+    font-weight: var(--fw-600);
+}
+
+.main .main--content p {
+    font-size: 0.8rem;
+    font-weight: var(--fw-400);
+}
+
+.main .main--content a {
+    color: var(--clr-soft-magenta);
+    font-weight: var(--fw-600);
+    text-decoration: none;
+    background: #fff;
+    padding: 12px;
+    border-radius: 1.5rem;
+    width: 40%;
+    text-align: center;
+}
+
 footer {
     grid-column: 1 / 4;
-    border: 2px solid yellow;
+    height: 8vh;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer ul li {
+    font-size: 1.2rem;
+    border: 2px solid white;
+    padding: 0.6rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+footer ul li i {
+    color: #fff;
 }
