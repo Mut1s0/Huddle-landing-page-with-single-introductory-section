@@ -136,6 +136,11 @@ main {
     font-weight: var(--fw-400);
 }
 
+.content__link:hover {
+    background-color: var(--clr-soft-magenta);
+    color: #fff;
+}
+
 footer {
     height: 100px;
     display: flex;
@@ -152,12 +157,21 @@ footer {
     margin-left: 1.5rem;
     border-radius: 50%;
     padding: 0.6rem;
+    cursor: pointer;
 }
 
 .footer__item:first-child {
     margin-left: 0;
 }
 
+.footer__item:hover {
+    border: 1px solid var(--clr-soft-magenta);
+}
+
 .footer__link {
     color: #fff;
+}
+
+.footer__link:hover {
+    color: var(--clr-soft-magenta);
 }
