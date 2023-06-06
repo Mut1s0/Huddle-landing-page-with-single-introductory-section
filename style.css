@@ -53,7 +53,7 @@ img{
 
 main {
     background-color: var(--clr-violet);
-    height: 100vh;
+    height: 1110px;
 }
 
 .wrapper {
@@ -77,7 +77,7 @@ main {
 
 .main-content {
     text-align: center;
-    height: 350px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -174,4 +174,58 @@ footer {
 
 .footer__link:hover {
     color: var(--clr-soft-magenta);
+}
+
+@media screen and (min-width: 768px) {
+    .main-sub {
+        background-image: url(./Images/bg-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1410px;
+    }
+
+    main {
+        background-color: var(--clr-violet);
+        height: 1410px;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 90%;
+        height: 100%;
+        column-gap: 50px;
+    }
+
+    .header-content {
+        grid-column: 1 / 5;
+    }
+
+    .header-img {
+        grid-column: 1 / 3;
+        height: 100%;
+    }
+
+    .main-content {
+        grid-column: 3 / 5;
+        height: 100%;
+        text-align: left;
+    }
+
+    .content-p {
+        max-width: 100%;
+    }
+
+    footer {
+        grid-column: 1 / 5;
+        justify-content: flex-end;
+        height: 100%;
+    }
+
+    .content-link {
+        height: 90px;
+        justify-content: flex-start;
+        align-items: center;
+    }
 }
